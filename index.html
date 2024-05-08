@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>OUISPORT</title>
+  </head>
+  <body>
+    <button id="menu">MENU</button>
+    <div id="loading">
+      <h1 id="load">CHARGEMENT</h1>
+      <div class="ring_blue">
+          <span class="blue"></span>
+      </div>
+      <div class="ring_yellow">
+          <span class="yellow"></span>
+      </div>
+      <div class="ring_black">
+          <span class="black"></span>
+      </div>
+      <div class="ring_green">
+          <span class="green"></span>
+      </div>
+      <div class="ring_red">
+          <span class="red"></span>
+      </div>
+    </div>
+    <div id="backinterface"></div>
+    <div id="gameinterface">
+      <!-- JEU 1 INTERFACE DÉBUT -->
+      <div id="start1">
+        <h1>Comment jouer ?</h1>
+        <p>Il faut atteindre la ligne d'arrivée en touchant le moins de haies.</p>
+        <p>Pour sauter, appuyez sur la touche qui correspond à votre joueur.</p>
+        <h2>Appuyez sur espace pour commencer</h2> 
+      </div>
+      <!-- JEU 2 INTERFACE DÉBUT -->
+      <div id="start2">
+        <h1>Comment jouer ?</h1>
+        <p>Il faut lancer le javelot le plus loin possible chacun son tour.</p>
+        <p>Appuyez rapidement sur les touches qui apparaissent à l'écran pour qu'il aille plus loin.</p>
+        <h2 id="start2tour">Appuyez sur espace pour commencer au tour de joueur 1</h2>
+      </div>
+      <!-- JEU 3 INTERFACE DÉBUT -->
+      <div id="start3">
+        <h1>Comment jouer ?</h1>
+        <p>Le tireur doit toucher 5 cibles et l'opérateur doit les déplacer pour éviter les flèches du tireur.</p>
+        <p>Le tireur utilise la souris et le clic gauche, et l'opérateur utilise Z, Q, S et D.</p>
+        <h2>Appuyez sur espace pour commencer la manche 1 (sur 2)</h2> 
+      </div>
+      <!-- JEU 4 INTERFACE DÉBUT -->
+      <div id="start4">
+        <h1>Comment jouer ?</h1>
+        <p>Il faut atteindre la ligne d'arrivée en touchant le moins de haies.</p>
+        <p>Pour sauter, appuyez sur la touche qui correspond à votre joueur.</p>
+        <h2>Appuyez sur espace pour commencer</h2>
+      </div>
+    </div>
+
+    <!-- JEU 1 INTERFACE FIN -->
+    <div id="end1">
+      <h1 id="wintext">SCORES</h1>
+      <div id="p4">
+        <h1>JOUEUR 4</h1>
+        <h1 id="score4"></h1>
+      </div>
+      <div id="p3">
+        <h1>JOUEUR 3</h1>
+        <h1 id="score3"></h1>
+      </div>
+      <div id="p2">
+        <h1>JOUEUR 2</h1>
+        <h1 id="score2"></h1>
+      </div>
+      <div id="p1">
+        <h1>JOUEUR 1</h1>
+        <h1 id="score1"></h1>
+      </div>
+      <button id="menu1">CLIQUEZ ICI POUR RETOURNER AU MENU</button>
+    </div>
+    <!-- JEU 1 INTERFACE SCORE -->
+    <div id="interface1">
+      <div id="p1">
+        <h1>JOUEUR 1</h1>
+        <h2>N</h2>
+        <h1 id="score1">20/20</h1>
+      </div>
+      <div id="p2">
+        <h1>JOUEUR 2</h1>
+        <h2>W</h2>
+        <h1 id="score2">20/20</h1>
+      </div>
+      <div id="p3">
+        <h1>JOUEUR 3</h1>
+        <h2>P</h2>
+        <h1 id="score3">20/20</h1>
+      </div>
+      <div id="p4">
+        <h1>JOUEUR 4</h1>
+        <h2>A</h2>
+        <h1 id="score4">20/20</h1>
+      </div>
+    </div>
+
+    <!-- JEU 2 INTERFACE SCORE -->
+    <div id="interface2">
+      <div id="p1">
+        <h1>JOUEUR 1</h1>
+        <h1 id="score12">0m</h1>
+      </div>
+      <div id="p2">
+        <h1>JOUEUR 2</h1>
+        <h1 id="score22">0m</h1>
+      </div>
+      <div id="p3">
+        <h1>JOUEUR 3</h1>
+        <h1 id="score32">0m</h1>
+      </div>
+    </div>
+    <!-- JEU 2 QTE LETTRE -->
+    <div id="qte">
+      <h1 id="qtelettre"></h1>
+    </div>
+    <!-- JEU 2 INTERFACE FIN -->
+    <div id="end2">
+      <h1 id="wintext2">SCORES</h1>
+      <button id="menu2">CLIQUEZ ICI POUR RETOURNER AU MENU</button>
+    </div>
+
+    <!-- JEU 3 INTERFACE SCORE -->
+    <div id="interface3">
+      <div id="p31">
+        <h1>JOUEUR 1 : TIREUR</h1>
+        <h1 id="score31">0 points</h1>
+      </div>
+      <div id="p32">
+        <h1>JOUEUR 2 : OPÉRATEUR</h1>
+        <h1 id="score32">0 points</h1>
+      </div>
+    </div>
+    <span id="crs">+</span>
+    <div id="target">
+      <div id="Z">Z</div>
+      <div id="Q">Q</div>
+      <div id="S">S</div>
+      <div id="D">D</div>
+      <div id="target1">blanc</div>
+      <div id="target2">noir</div>
+      <div id="target3">bleu</div>
+      <div id="target4">rouge</div>
+      <div id="target5">jaune</div>
+    </div>
+    <!-- JEU 4 INTERFACE SCORE-->
+    <div id="interface4">
+      <div id="joueur">
+        <h1>JOUEUR</h1>
+        <h2>BUT</h2>
+        <h1 id="score1"> /10</h1>
+      </div>
+      <div id="p2">
+        <h1>ORDI</h1>
+        <h2>ARRETS</h2>
+        <h1 id="score2"> /10</h1>
+      </div>
+    </div>
+    <!-- INTERFACE MENU -->
+    <div id="interface">
+      <div id="title">
+        <img src="/images/title.gif">
+      </div>
+      <div id="Jeu1" class="circle blue">
+        <p>NIVEAU&nbsp;1</p>
+        <div class="warp" aria-labelledby="warp-label">
+          <span id="warp-label" class="warp__placeholder">
+              4 JOUEURS
+          </span>
+          <span aria-role="presentation">
+              <span class="warp__0">
+                  4
+              </span>
+              <span class="warp__1">
+                   
+              </span>
+              <span class="warp__2">
+                  J
+              </span>
+              <span class="warp__3">
+                  O
+              </span>
+              <span class="warp__4">
+                  U
+              </span>
+              <span class="warp__5">
+                  E
+              </span>
+              <span class="warp__6">
+                  U
+              </span>
+              <span class="warp__7">
+                  R
+              </span>
+              <span class="warp__8">
+                  S
+              </span>
+          </span>
+        </div>
+      </div>
+      <div id="Jeu2" class="circle black">
+        <p>NIVEAU&nbsp;2</p>
+        <div class="warp2" aria-labelledby="warp-label">
+          <span id="warp-label" class="warp_placeholder">
+              3 JOUEURS
+          </span>
+          <span aria-role="presentation">
+              <span class="warp_0">
+                  3
+              </span>
+              <span class="warp_1">
+                   
+              </span>
+              <span class="warp_2">
+                  J
+              </span>
+              <span class="warp_3">
+                  O
+              </span>
+              <span class="warp_4">
+                  U
+              </span>
+              <span class="warp_5">
+                  E
+              </span>
+              <span class="warp_6">
+                  U
+              </span>
+              <span class="warp_7">
+                  R
+              </span>
+              <span class="warp_8">
+                  S
+              </span>
+          </span>
+        </div>
+      </div>
+      <div id="Jeu3" class="circle red">
+        <p>NIVEAU&nbsp;3</p>
+        <div class="warp3" aria-labelledby="warp-label">
+          <span id="warp-label" class="warp-placeholder">
+              2 JOUEURS
+          </span>
+          <span aria-role="presentation">
+              <span class="warp-0">
+                  2
+              </span>
+              <span class="warp-1">
+                   
+              </span>
+              <span class="warp-2">
+                  J
+              </span>
+              <span class="warp-3">
+                  O
+              </span>
+              <span class="warp-4">
+                  U
+              </span>
+              <span class="warp-5">
+                  E
+              </span>
+              <span class="warp-6">
+                  U
+              </span>
+              <span class="warp-7">
+                  R
+              </span>
+              <span class="warp-8">
+                  S
+              </span>
+          </span>
+        </div>
+      </div>
+      <div id="Jeu4" class="circle yellow">
+        <p>NIVEAU&nbsp;4</p>
+        <div class="warp4" aria-labelledby="warp-label">
+          <span id="warp-label" class="warpàplaceholder">
+              1 JOUEURS
+          </span>
+          <span aria-role="presentation">
+              <span class="warpà0">
+                  1
+              </span>
+              <span class="warpà1">
+                   
+              </span>
+              <span class="warpà2">
+                  J
+              </span>
+              <span class="warpà3">
+                  O
+              </span>
+              <span class="warpà4">
+                  U
+              </span>
+              <span class="warpà5">
+                  E
+              </span>
+              <span class="warpà6">
+                  U
+              </span>
+              <span class="warpà7">
+                  R
+              </span>
+              <span class="warpà8">
+                  S
+              </span>
+          </span>
+        </div>
+      </div>
+      <div id="INFORMATIONS" class="circle green"><p>PARAMETRES</p></div>
+    </div>
+
+    <!-- INTERFACE PARAMETRES -->
+    <div id="interfaceInfo">
+      <h1>PARAMETRES</h1>
+      <div>
+        <p>Foule</p>
+        <p class="txt">Ajuster la densité de la foule dans le stade en fonction des performances de votre ordinateur.</p>
+        <span id="rangeValue">0%</span>
+        <input type="range" id="crowds" step min="0" max="100" value="50" step="1" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></input>
+        <script type="text/javascript">
+          function rangeSlide(value) {
+              document.getElementById('rangeValue').innerHTML = value+"%";
+          }
+        </script>
+      </div>
+      <div>
+        <p>Volume</p>
+        <span id="rangeValue1">0</span>
+        <input type="range" id="volume" step="0.1" min="0" max="3" onChange="rangeSlide1(this.value)" onmousemove="rangeSlide1(this.value)"/>
+      </div>
+      <script type="text/javascript">
+        function rangeSlide1(value) {
+            document.getElementById('rangeValue1').innerHTML = value;
+        }
+      </script>
+      <p><a href="https://github.com/Ginosprod/OUISPORT">Lien du GitHub </a>(code source, trailer, gameplay...)</p>
+    </div>
+
+    <canvas id="renderCanvas"></canvas>
+    <script type="module" src="/main.js"></script>
+    
+  </body>
+</html>
